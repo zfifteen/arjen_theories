@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-This document defines the work required to produce a professional, research-grade technical note based on [dijksman_rvm_revised.md](/Users/velocityworks/IdeaProjects/research/arjen_theories/dijksman_rvm_revised.md).
+This document defines the work required to produce a professional, research-grade technical note based on [`dijksman_rvm_revised.md`](../source/dijksman_rvm_revised.md).
 
 That document is the ground-truth source for scope, claims, and terminology. All supporting documents, derivations, experiments, figures, and summary notes must remain consistent with it. Nothing in this plan widens the claim surface beyond what the ground-truth document supports.
 

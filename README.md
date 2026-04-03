@@ -16,7 +16,7 @@ is supported analytically and reproduced deterministically in code and fixed res
 
 ## What Arjen's Original Conjecture Was
 
-The repository's primary source is [`dijksman_rvm_revised.md`](dijksman_rvm_revised.md), which preserves the physical content of the original note while correcting its claim boundaries. That revised note cites Arjen's original `materion.free.fr` page at `http://materion.free.fr/OldVersion/physique/reconsider.htm`, and [`thread.md`](thread.md) preserves part of the public citation trail around the broader materion / RVM idea.
+The repository's primary source is [`dijksman_rvm_revised.md`](docs/source/dijksman_rvm_revised.md), which preserves the physical content of the original note while correcting its claim boundaries. That revised note cites Arjen's original `materion.free.fr` page at `http://materion.free.fr/OldVersion/physique/reconsider.htm`, and [`thread.md`](docs/history/thread.md) preserves part of the public citation trail around the broader materion / RVM idea.
 
 In plain language, the original conjecture is:
 
@@ -39,10 +39,10 @@ What was broadened in the original intuition:
 
 What is refined here:
 
-- the source note is rewritten as a scoped, corrected technical statement in [`dijksman_rvm_revised.md`](dijksman_rvm_revised.md)
-- the exact claim surface is locked in [`claims.md`](claims.md)
-- the basic objects, symbols, and operational terms are fixed in [`definitions.md`](definitions.md)
-- the special-case threshold is derived explicitly in [`special_case_derivation.md`](special_case_derivation.md)
+- the source note is rewritten as a scoped, corrected technical statement in [`dijksman_rvm_revised.md`](docs/source/dijksman_rvm_revised.md)
+- the exact claim surface is locked in [`claims.md`](docs/foundations/claims.md)
+- the basic objects, symbols, and operational terms are fixed in [`definitions.md`](docs/foundations/definitions.md)
+- the special-case threshold is derived explicitly in [`special_case_derivation.md`](docs/analysis/special_case_derivation.md)
 - a deterministic special-case instrument is implemented in [`scripts/special_case_experiment.py`](scripts/special_case_experiment.py)
 - one-at-a-time perturbation tests are defined and executed without pretending that unsupported formulas transfer automatically
 - the project stops at the point where the source support runs out
@@ -87,13 +87,13 @@ The repository is organized as a small research pipeline.
 
 ### 1. Claim control
 
-[`claims.md`](claims.md) extracts what the source note actually claims, what it merely hypothesizes, and what it explicitly does not claim. This prevents later code and figures from sounding stronger than the source support allows.
+[`claims.md`](docs/foundations/claims.md) extracts what the source note actually claims, what it merely hypothesizes, and what it explicitly does not claim. This prevents later code and figures from sounding stronger than the source support allows.
 
-[`definitions.md`](definitions.md) then fixes the objects and terms used everywhere else: segment length `L`, separation speed `c`, angular speed `omega`, the threshold `omega_0`, the three regime labels, and the meaning of `tau_contact`.
+[`definitions.md`](docs/foundations/definitions.md) then fixes the objects and terms used everywhere else: segment length `L`, separation speed `c`, angular speed `omega`, the threshold `omega_0`, the three regime labels, and the meaning of `tau_contact`.
 
 ### 2. Analytic derivation
 
-[`special_case_derivation.md`](special_case_derivation.md) turns the special-case picture into explicit timing comparisons. The key comparison is between
+[`special_case_derivation.md`](docs/analysis/special_case_derivation.md) turns the special-case picture into explicit timing comparisons. The key comparison is between
 
 ```text
 t_rot = pi / (2 omega)
@@ -137,7 +137,7 @@ It writes a fixed CSV schema with columns such as:
 - `gliding_contact_occurs`
 - `tau_contact_supported`
 
-The methods contract for that script is documented in [`methods/special_case_experiment.md`](methods/special_case_experiment.md).
+The methods contract for that script is documented in [`methods/special_case_experiment.md`](docs/methods/special_case_experiment.md).
 
 ### 4. Fixed evidence package
 
@@ -145,7 +145,7 @@ The core evidence files are:
 
 - [`results/special_case_threshold.csv`](results/special_case_threshold.csv)
 - [`results/special_case_scaling.csv`](results/special_case_scaling.csv)
-- [`results/special_case_summary.md`](results/special_case_summary.md)
+- [`results/special_case_summary.md`](docs/results/special_case_summary.md)
 - [`figures/special_case_threshold.png`](figures/special_case_threshold.png)
 - [`figures/special_case_scaling.png`](figures/special_case_scaling.png)
 
@@ -153,7 +153,7 @@ These show that the threshold transition is reproducible and that the supported 
 
 ### 5. One-at-a-time perturbation program
 
-The original note named four ways the special case could fail to generalize. This repository turns those into a bounded perturbation program in [`methods/perturbation_tests.md`](methods/perturbation_tests.md):
+The original note named four ways the special case could fail to generalize. This repository turns those into a bounded perturbation program in [`methods/perturbation_tests.md`](docs/methods/perturbation_tests.md):
 
 - nonzero `omega_CD`
 - non-perpendicular collision plane
@@ -166,7 +166,7 @@ Each family keeps a zero-perturbation control row set and varies only one parame
 - [`results/perturbation_plane_tilt.csv`](results/perturbation_plane_tilt.csv)
 - [`results/perturbation_contact_offset.csv`](results/perturbation_contact_offset.csv)
 - [`results/perturbation_approach_angle.csv`](results/perturbation_approach_angle.csv)
-- [`generalization_assessment.md`](generalization_assessment.md)
+- [`generalization_assessment.md`](docs/analysis/generalization_assessment.md)
 
 The result is not "generalization succeeded" and not "generalization failed." The correct result is "nonzero perturbation families remain ambiguous under the current source set because the necessary family-specific post-recollision contact laws are missing."
 
@@ -213,35 +213,35 @@ This plot tests oblique approach rather than perpendicular approach. It closes t
 If you want the fastest route through the repository, read these in order:
 
 1. [`README.md`](README.md)
-2. [`PROJECT_STATUS.md`](PROJECT_STATUS.md)
-3. [`technical_note.md`](technical_note.md)
-4. [`dijksman_rvm_revised.md`](dijksman_rvm_revised.md)
-5. [`special_case_derivation.md`](special_case_derivation.md)
-6. [`results/special_case_summary.md`](results/special_case_summary.md)
-7. [`generalization_assessment.md`](generalization_assessment.md)
-8. [`interpretation_limits.md`](interpretation_limits.md)
+2. [`PROJECT_STATUS.md`](docs/project/PROJECT_STATUS.md)
+3. [`technical_note.md`](docs/analysis/technical_note.md)
+4. [`dijksman_rvm_revised.md`](docs/source/dijksman_rvm_revised.md)
+5. [`special_case_derivation.md`](docs/analysis/special_case_derivation.md)
+6. [`results/special_case_summary.md`](docs/results/special_case_summary.md)
+7. [`generalization_assessment.md`](docs/analysis/generalization_assessment.md)
+8. [`interpretation_limits.md`](docs/analysis/interpretation_limits.md)
 
 ## What Counts as the Finished Research Result
 
 The evidence-bearing core of the repo is:
 
-- [`dijksman_rvm_revised.md`](dijksman_rvm_revised.md)
-- [`claims.md`](claims.md)
-- [`definitions.md`](definitions.md)
-- [`special_case_derivation.md`](special_case_derivation.md)
-- [`methods/special_case_experiment.md`](methods/special_case_experiment.md)
-- [`methods/perturbation_tests.md`](methods/perturbation_tests.md)
+- [`dijksman_rvm_revised.md`](docs/source/dijksman_rvm_revised.md)
+- [`claims.md`](docs/foundations/claims.md)
+- [`definitions.md`](docs/foundations/definitions.md)
+- [`special_case_derivation.md`](docs/analysis/special_case_derivation.md)
+- [`methods/special_case_experiment.md`](docs/methods/special_case_experiment.md)
+- [`methods/perturbation_tests.md`](docs/methods/perturbation_tests.md)
 - [`results/`](results/)
 - [`figures/`](figures/)
-- [`generalization_assessment.md`](generalization_assessment.md)
-- [`interpretation_limits.md`](interpretation_limits.md)
-- [`technical_note.md`](technical_note.md)
+- [`generalization_assessment.md`](docs/analysis/generalization_assessment.md)
+- [`interpretation_limits.md`](docs/analysis/interpretation_limits.md)
+- [`technical_note.md`](docs/analysis/technical_note.md)
 
 Historical or exploratory materials are kept for provenance, but they should not be read as the bounded final conclusion without checking them against the claim controls above. That includes items such as:
 
-- [`thread.md`](thread.md)
-- [`The Concept of Inertia.pdf`](The%20Concept%20of%20Inertia.pdf)
-- [`experiment.md`](experiment.md)
+- [`thread.md`](docs/history/thread.md)
+- [`The Concept of Inertia.pdf`](<The Concept of Inertia.pdf>)
+- [`experiment.md`](docs/history/experiment.md)
 - [`demo.py`](demo.py)
 
 ## Reproducing the Core Instrument

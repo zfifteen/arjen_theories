@@ -50,9 +50,9 @@ Advance this project toward a professional, research-grade technical note ground
 
 ## Canonical Destination
 
-- The canonical destination for repository files is `/Users/velocityworks/IdeaProjects/research/arjen_theories`.
+- The canonical destination for repository files is `/Users/velocityworks/IdeaProjects/arjen_theories`.
 - The worktree is scratch only. Any repository file created or modified during an automated run must also be created or modified at the same relative path under the canonical destination before closeout.
-- Before closeout, verify the visible repo result with `git -C /Users/velocityworks/IdeaProjects/research/arjen_theories status --short`.
+- Before closeout, verify the visible repo result with `git -C /Users/velocityworks/IdeaProjects/arjen_theories status --short`.
 
 ## Current Status
 

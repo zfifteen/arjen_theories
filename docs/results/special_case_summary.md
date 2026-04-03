@@ -1,6 +1,6 @@
 # Summary of the Fixed Special-Case Threshold Sweep
 
-This note summarizes the canonical threshold sweep in [`results/special_case_threshold.csv`](/Users/velocityworks/IdeaProjects/research/arjen_theories/results/special_case_threshold.csv), produced by [`scripts/special_case_experiment.py`](/Users/velocityworks/IdeaProjects/research/arjen_theories/scripts/special_case_experiment.py) for the constrained geometry defined in [`dijksman_rvm_revised.md`](/Users/velocityworks/IdeaProjects/research/arjen_theories/dijksman_rvm_revised.md).
+This note summarizes the canonical threshold sweep in [`results/special_case_threshold.csv`](../../results/special_case_threshold.csv), produced by [`scripts/special_case_experiment.py`](../../scripts/special_case_experiment.py) for the constrained geometry defined in [`dijksman_rvm_revised.md`](../source/dijksman_rvm_revised.md).
 
 The strongest supported result is narrow and explicit: the fixed seven-point sweep reproduces the three-regime threshold structure claimed in the source note for the special case. With `L = 2` and `c = 1`, the threshold is
 

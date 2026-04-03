@@ -9,8 +9,8 @@ At the start of the run:
 1. Read `automation/AUTOMATION_MEMORY.md`.
 2. Read `RESEARCH_PLAN.md`.
 3. Inspect `git status --short` and treat that output as the baseline for commit scope.
-4. Inspect `git -C /Users/velocityworks/IdeaProjects/research/arjen_theories status --short`.
-5. Treat `/Users/velocityworks/IdeaProjects/research/arjen_theories` as the canonical destination for repository files.
+4. Inspect `git -C /Users/velocityworks/IdeaProjects/arjen_theories status --short`.
+5. Treat `/Users/velocityworks/IdeaProjects/arjen_theories` as the canonical destination for repository files.
 6. If the current milestone already has unfinished artifact work in the worktree, continue it before choosing a new task.
 7. Identify the highest-priority missing canonical artifact family or decision package required by the current milestone.
 8. Read only the additional files needed to close that slice.
@@ -31,7 +31,7 @@ During the run:
 - Do not choose a communication or cleanup task while a milestone-gating artifact is still missing and unblocked.
 - For Milestone 3, the canonical targets are `scripts/special_case_experiment.py` and `methods/special_case_experiment.md`. `demo.py` is not a milestone artifact.
 - If the current active task is code or methods, produce or modify every canonical file needed to make that slice inspectable in the run. Do not end with only notes about what should be built next.
-- Any repository file created or modified in the worktree must also be created or modified at the same relative path under `/Users/velocityworks/IdeaProjects/research/arjen_theories` before the run ends.
+- Any repository file created or modified in the worktree must also be created or modified at the same relative path under `/Users/velocityworks/IdeaProjects/arjen_theories` before the run ends.
 - If the run changes repository files, create a commit before ending.
 - Stage only files changed during the current run. Do not include unrelated pre-existing changes in the automation commit.
 - If a required touched file already had unrelated uncommitted changes before the run and commit scope cannot be kept clean, stop and report a commit-scope conflict instead of mixing authorship.
@@ -41,7 +41,7 @@ Before ending the run:
 1. Update `automation/AUTOMATION_MEMORY.md` with current status, blockers, and next recommended action.
 2. Append a dated entry to `automation/WORK_LOG.md` describing what was done, which files changed, what results were produced, and what should happen next.
 3. If repository files changed, create the detailed commit before ending the run.
-4. Verify the promoted changes with `git -C /Users/velocityworks/IdeaProjects/research/arjen_theories status --short`.
+4. Verify the promoted changes with `git -C /Users/velocityworks/IdeaProjects/arjen_theories status --short`.
 5. Briefly summarize the completed work and the commit in the final response.
 ```
 
