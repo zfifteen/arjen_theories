@@ -1,6 +1,6 @@
 ![arjen_theories hero banner](assets/banner-hero.jpg)
 
-# arjen_theories
+# The Concept Of Inertia
 
 This repository takes one geometric idea seriously and then narrows it until only auditable claims remain.
 
