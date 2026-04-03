@@ -172,37 +172,37 @@ The result is not "generalization succeeded" and not "generalization failed." Th
 
 ### Special-case threshold sweep
 
-![Fixed special-case threshold sweep](figures/special_case_threshold.png)
+![Fixed special-case threshold sweep](https://raw.githubusercontent.com/zfifteen/arjen_theories/main/figures/special_case_threshold.png)
 
 This figure visualizes the central special-case transition. Negative `ell_rem` values mean the first possible re-encounter lies beyond the available half-length of `AB`, so no interior re-encounter is supported. Zero is the tip case. Positive values move the first re-encounter into the interior, which is the supported onset of non-instantaneous gliding contact.
 
 ### Above-threshold scaling diagnostics
 
-![Special-case above-threshold scaling diagnostics](figures/special_case_scaling.png)
+![Special-case above-threshold scaling diagnostics](https://raw.githubusercontent.com/zfifteen/arjen_theories/main/figures/special_case_scaling.png)
 
 This figure is intentionally modest in what it claims. It shows that once the system is above threshold, the available kinematic diagnostics change smoothly with `omega / omega_0`. It does **not** plot `tau_contact`, because the repository does not derive that quantity from the current source set.
 
 ### CD-rotation perturbation matrix
 
-![CD rotation perturbation status matrix](figures/perturbation_cd_rotation.png)
+![CD rotation perturbation status matrix](https://raw.githubusercontent.com/zfifteen/arjen_theories/main/figures/perturbation_cd_rotation.png)
 
 The bottom control row reproduces the special-case transition: no supported gliding below threshold, the threshold anchor at `omega / omega_0 = 1`, and supported gliding above threshold. Every nonzero `omega_CD / omega` row remains ambiguous because the source set does not provide a family-specific gliding/contact law for rotating `CD`.
 
 ### Plane-tilt perturbation matrix
 
-![Plane tilt perturbation status matrix](figures/perturbation_plane_tilt.png)
+![Plane tilt perturbation status matrix](https://raw.githubusercontent.com/zfifteen/arjen_theories/main/figures/perturbation_plane_tilt.png)
 
 This plot asks whether the effect survives once the collision plane is no longer exactly perpendicular. The control row still behaves like the special case. Every nonzero tilt row stays ambiguous for the same reason: no perturbed-geometry closure law is available.
 
 ### Contact-offset perturbation matrix
 
-![Contact offset perturbation status matrix](figures/perturbation_contact_offset.png)
+![Contact offset perturbation status matrix](https://raw.githubusercontent.com/zfifteen/arjen_theories/main/figures/perturbation_contact_offset.png)
 
 This plot tests whether the phenomenon survives once the collision is no longer center-on-center. Again, the control row is intact and every nonzero row remains ambiguous under the current source set.
 
 ### Approach-angle perturbation matrix
 
-![Approach angle perturbation status matrix](figures/perturbation_approach_angle.png)
+![Approach angle perturbation status matrix](https://raw.githubusercontent.com/zfifteen/arjen_theories/main/figures/perturbation_approach_angle.png)
 
 This plot tests oblique approach rather than perpendicular approach. It closes the same way as the other perturbation families: special-case control retained, nonzero rows unresolved.
 
