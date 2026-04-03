@@ -14,7 +14,7 @@ is supported analytically and reproduced deterministically in code and fixed res
 
 ## What Arjen's Original Conjecture Was
 
-The repository's primary source is [`dijksman_rvm_revised.md`](dijksman_rvm_revised.md), which preserves the physical content of the original note while correcting its claim boundaries. That revised note cites Arjen's original website at `http://materion.free.fr/physique/reconsider.htm`, and [`thread.md`](thread.md) preserves part of the public citation trail around the broader materion / RVM idea. The live `materion.free.fr` pages were not reliably retrievable from this environment while writing this README, so the summary below is a reconstruction from the preserved source trail in this repo rather than a fresh quote from the site.
+The repository's primary source is [`dijksman_rvm_revised.md`](dijksman_rvm_revised.md), which preserves the physical content of the original note while correcting its claim boundaries. That revised note cites Arjen's original `materion.free.fr` page at `http://materion.free.fr/OldVersion/physique/reconsider.htm`, and [`thread.md`](thread.md) preserves part of the public citation trail around the broader materion / RVM idea.
 
 In plain language, the original conjecture is:
 

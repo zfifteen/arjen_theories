@@ -122,7 +122,7 @@ The following claims are explicitly not made: that this mechanism generalizes to
 
 ## References
 
-Dijksman, A. (1999). *Reconsideration of classical mechanics*. Fusion 75 (in French). Translated version available at http://materion.free.fr/physique/reconsider.htm.
+Dijksman, A. (1999). *Reconsideration of classical mechanics*. Fusion 75 (in French). Translated version available at http://materion.free.fr/OldVersion/physique/reconsider.htm.
 
 ---
 
