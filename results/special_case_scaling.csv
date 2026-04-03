@@ -1,0 +1,8 @@
+omega,length,separation_speed,omega_0,omega_ratio,v_tip,t_rot,t_clear,delta_t,s_re,ell_rem,first_reencounter_location,interior_reencounter_occurs,gliding_contact_occurs,regime,tau_contact_supported,tau_contact,tau_contact_status
+1.64933614313464,2,1,1.5707963267949,1.05,1.64933614313464,0.952380952380953,1,0.0476190476190469,0.952380952380953,0.0476190476190469,interior,yes,yes,non_instantaneous_gliding_contact,no,,undetermined_from_source_note
+1.72787595947439,2,1,1.5707963267949,1.1,1.72787595947439,0.909090909090907,1,0.0909090909090929,0.909090909090907,0.0909090909090929,interior,yes,yes,non_instantaneous_gliding_contact,no,,undetermined_from_source_note
+1.96349540849362,2,1,1.5707963267949,1.25,1.96349540849362,0.8,1,0.2,0.8,0.2,interior,yes,yes,non_instantaneous_gliding_contact,no,,undetermined_from_source_note
+2.35619449019234,2,1,1.5707963267949,1.5,2.35619449019234,0.666666666666668,1,0.333333333333332,0.666666666666668,0.333333333333332,interior,yes,yes,non_instantaneous_gliding_contact,no,,undetermined_from_source_note
+3.14159265358979,2,1,1.5707963267949,2,3.14159265358979,0.5,1,0.5,0.5,0.5,interior,yes,yes,non_instantaneous_gliding_contact,no,,undetermined_from_source_note
+4.71238898038469,2,1,1.5707963267949,3,4.71238898038469,0.333333333333333,1,0.666666666666667,0.333333333333333,0.666666666666667,interior,yes,yes,non_instantaneous_gliding_contact,no,,undetermined_from_source_note
+6.28318530717959,2,1,1.5707963267949,4,6.28318530717959,0.25,1,0.75,0.25,0.75,interior,yes,yes,non_instantaneous_gliding_contact,no,,undetermined_from_source_note
