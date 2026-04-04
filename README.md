@@ -170,6 +170,8 @@ Each family keeps a zero-perturbation control row set and varies only one parame
 
 The result is not "generalization succeeded" and not "generalization failed." The correct result is "nonzero perturbation families remain ambiguous under the current source set because the necessary family-specific post-recollision contact laws are missing."
 
+A supplemental note now sharpens the approach-angle family at the onset level. [`approach_angle_onset_derivation.md`](docs/analysis/approach_angle_onset_derivation.md) derives a family-specific threshold for first interior re-encounter under oblique approach while keeping the other three special-case constraints fixed. That note does **not** derive `tau_contact` or rewrite the repository's final stop condition. It documents a deterministic onset law only.
+
 ## Evidence Plots
 
 ### Special-case threshold sweep
@@ -217,9 +219,10 @@ If you want the fastest route through the repository, read these in order:
 3. [`technical_note.md`](docs/analysis/technical_note.md)
 4. [`dijksman_rvm_revised.md`](docs/source/dijksman_rvm_revised.md)
 5. [`special_case_derivation.md`](docs/analysis/special_case_derivation.md)
-6. [`results/special_case_summary.md`](docs/results/special_case_summary.md)
-7. [`generalization_assessment.md`](docs/analysis/generalization_assessment.md)
-8. [`interpretation_limits.md`](docs/analysis/interpretation_limits.md)
+6. [`approach_angle_onset_derivation.md`](docs/analysis/approach_angle_onset_derivation.md)
+7. [`results/special_case_summary.md`](docs/results/special_case_summary.md)
+8. [`generalization_assessment.md`](docs/analysis/generalization_assessment.md)
+9. [`interpretation_limits.md`](docs/analysis/interpretation_limits.md)
 
 ## What Counts as the Finished Research Result
 
